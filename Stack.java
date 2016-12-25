@@ -25,7 +25,7 @@ public class Stack<E> {
 	public void push(E element){
             Node<E> node = new Node<E>(element);
             
-            //furst node in the stack
+           	//first node in the stack
 		if(size == 0)
                 {
                     this.top = node;
@@ -50,7 +50,6 @@ public class Stack<E> {
             }
             
             if(size == 0) {
-                System.out.println("size==0");
                 temp = this.top;
             }
             else {
