@@ -31,12 +31,13 @@ public class Queue<E> {
             if(size < 0) {
                 throw new IndexOutOfBoundsException();
             }
-            //
+            //if empty
             if(size == 0)
             {
                 this.front = node;
                 this.back = node;
             }
+	    //adds to the end of queue
             else {
                 back.next = node;
                 this.back = node;
